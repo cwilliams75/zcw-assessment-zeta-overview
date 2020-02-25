@@ -33,10 +33,13 @@ public class IntegerUtils {
     }
 
     /**
-     * @param val integer value input by client
+     * @param integerRepresentation integer value input by client
      * @return integer with identical digits in the reverse order
      */
-    public static Integer reverseDigits(Integer val) {
-        return null;
+    public static Integer reverseDigits(Integer integerRepresentation) {
+        String stringRepresentation = integerRepresentation.toString();
+        String reversed = BasicStringUtils.reverse(stringRepresentation);
+        Integer result = Integer.parseInt(reversed);
+        return result;
     }
 }
