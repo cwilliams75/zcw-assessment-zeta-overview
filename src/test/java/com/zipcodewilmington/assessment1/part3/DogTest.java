@@ -13,15 +13,15 @@ public class DogTest {
         PetOwner expectedOwner = null;
         String expectedName = "Dog name";
         Integer expectedAge = 0;
-        Dog dog = new Dog();
 
         // When
-        String actualName = dog.getName();
-        Integer actualAge = dog.getAge();
-        PetOwner actualOwner = dog.getOwner();
+        Dog dog = new Dog();
 
 
         // Then
+        String actualName = dog.getName();
+        Integer actualAge = dog.getAge();
+        PetOwner actualOwner = dog.getOwner();
         Assert.assertEquals(expectedAge, actualAge);
         Assert.assertEquals(expectedName, actualName);
         Assert.assertEquals(expectedOwner, actualOwner);
